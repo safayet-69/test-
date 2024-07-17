@@ -3,31 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Scanner</title>
+    <title>Email and Number Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Email & Number Scanner</h1>
-    </header>
-    <main>
-        <form id="email-form" action="results.html">
-            <input type="email" id="email-input" name="email" placeholder="Enter email" required>
-            
-        </form>
+    <div class="container">
+        <h1>Email and Number Tracker</h1>
+        <textarea id="textInput" placeholder="Enter text here..."></textarea>
+        <button onclick="trackEmailsAndNumbers()">Track Emails and Numbers</button>
+        <div id="results"></div>
+    </div>
 
-        <form id="email-form" action="results.html">
-            <input type="number" id="email-input" name="number" placeholder="Enter number" required>
-            <button type="submit">Scan</button>
-            
-
-        </form>
-
-
-    </main>
     <script src="script.js"></script>
-
-
-    
 </body>
 </html>
